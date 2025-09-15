@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "baseUrl": ".",  
+    "paths": {  
+      "@/*": ["src/*"]  
+    }  
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts","src/**/*.vue", "src/store/sidebar.ts", "src/store/permiss.ts", "src/router/index.ts", "src/api/index.ts", "server/router.js", "server/index.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
